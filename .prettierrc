@@ -2,5 +2,7 @@
 	"tabWidth": 4,
 	"useTabs": true,
 	"jsxSingleQuote": true,
-	"singleQuote": true
+	"singleQuote": true,
+	"printWidth": 80,
+	"semi": true
 }
