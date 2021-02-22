@@ -12,3 +12,4 @@
 <h2 style="font-weight: 300">Changes:</h2>
 
 - Use **SASS** instead **CSS**;
+- Add **Husky *Hook*** to format code in pre-commit;
