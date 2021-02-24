@@ -8,16 +8,13 @@
     box-shadow: 0 0 60px rgba(0,0,0,0.05)
     padding: 1.5rem 2rem
 
-    display: flex
-    flex-direction: column
-    align-items: center
-    justify-content: center
+    +flex-settings(column)
+    +flex-alignment()
 
     text-align: center
 
 .challenge-not-active
-    display: flex
-    flex-direction: column
+    +flex-settings(column)
     align-items: center
 
     strong
@@ -40,8 +37,7 @@
     height: 100%
     width: 100%
 
-    display: flex
-    flex-direction: column
+    +flex-settings(column)
 
     header
         color: $blue
@@ -53,10 +49,8 @@
     main
         flex: 1
 
-        display: flex
-        flex-direction: column
-        align-items: center
-        justify-content: center
+        +flex-settings(column)
+        +flex-alignment()
 
         strong
             font-weight: 600
@@ -75,9 +69,8 @@
         button
             height: 3rem
 
-            display: flex
-            align-items: center
-            justify-content: center
+            +flex-settings()
+            +flex-alignment()
 
             border: 0
             border-radius: 5px

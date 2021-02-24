@@ -1,9 +1,8 @@
 @import '../../styles/theme/theme'
 
 .completed-container
-    display: flex
-    align-items: center
-    justify-content: space-between
+    +flex-settings()
+    +flex-alignment(center, space-between)
 
     margin: 3.5rem 0
     padding-bottom: 1rem

@@ -1,8 +1,8 @@
 @import "../../styles/theme/theme"
 
 .profile-container
-    display: flex
-    align-items: center
+    +flex-settings()
+    +flex-alignment(center, flex-start)
 
     > img
         width: 5.5rem
