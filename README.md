@@ -19,3 +19,5 @@
 - Use **SASS** instead **CSS** <small>(classe 1 - 22/02/21)</small>;
 - Add **Husky *Hook*** to format code in pre-commit <small>(classe 1 - 22/02/21)</small>;
 - Add green color (`#4cd62b`) when time is zero <small>(classe 2 - 23/02/21)</small>;
+- Create folder to storage **interfaces** (`src/interfaces`), like `IChallengesContextData` and `IChallenge` <small>(classe 3 - 24/02/21)</small>;
+  - **Note:** I use `I<Name>` to represent **interface**.
