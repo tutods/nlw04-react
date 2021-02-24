@@ -34,7 +34,7 @@
         font-size: 6.25rem
         margin: 0 0.5rem
 
-.start-btn
+.countdown-btn
     width: 100%
     height: 5rem
 
@@ -55,8 +55,22 @@
 
     transition: background-color 0.2s
 
-    &:hover
+    &:not(:disabled):hover
         background: $blueDark
 
-.red-clock
-    color: $red
+    &.btn-active
+        background: $white
+        color: $appTitleColor
+
+        &:hover
+            background: $red
+            color: $white
+
+    &:disabled
+        cursor: not-allowed
+
+        background: $white
+        color: $appTextColor
+
+.green-clock
+    color: $green
