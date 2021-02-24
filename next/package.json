@@ -18,19 +18,20 @@
 		"@types/react": "^17.0.2",
 		"@types/react-dom": "^17.0.1",
 		"@types/sass": "^1.16.0",
-		"husky": "^5.1.0",
+		"husky": "=4",
 		"lint-staged": "^10.5.4",
 		"prettier": "^2.2.1",
 		"typescript": "^4.1.5"
 	},
 	"lint-staged": {
 		"*.{js,ts,json,scss,css,md,html,tsx,jsx}": [
-			"prettier --write ."
+			"prettier --write .",
+			"git add ."
 		]
 	},
 	"husky": {
 		"hooks": {
-			"pre-commit": "echo \"———› START Prettier ‹———\" && lint-staged && git add . && echo \"———› Prettier ✅ ‹——— \""
+			"pre-commit": "lint-staged"
 		}
 	}
 }

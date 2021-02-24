@@ -48,12 +48,13 @@
 	},
 	"lint-staged": {
 		"*.{js,ts,json,scss,css,md,html,tsx,jsx}": [
-			"prettier --write ."
+			"prettier --write .",
+			"git add ."
 		]
 	},
 	"husky": {
 		"hooks": {
-			"pre-commit": "echo \"———› START Prettier ‹———\" && lint-staged && git add . && echo \"———› Prettier ✅ ‹——— \""
+			"pre-commit": "lint-staged"
 		}
 	}
 }
