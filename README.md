@@ -3,11 +3,19 @@
   <a href="#"><img src="https://img.shields.io/badge/react%20-%2320232a.svg?&style=for-the-badge&logo=react&logoColor=%2361DAFB" alt="React"/></a> <a href="#"><img src="https://img.shields.io/badge/Visual_Studio_Code-0078D4?style=for-the-badge&logo=visual%20studio%20code&logoColor=white" alt="VS Code" /></a>
 </div>
 
+<h2 style="font-weight:300">Layout:</h2>
+
+To see layout created by **Rocketseat** team, click on badge below:
+
+<a href="https://www.figma.com/file/UnPgRXKJulEvLAq3qkfRQX/Move.it-1.0" target="_blank"><img alt="Figma" src="https://img.shields.io/badge/figma%20-%23F24E1E.svg?&style=for-the-badge&logo=figma&logoColor=white"/></a>
+
+
 <h2 style="font-weight:300">Commands React:</h2>
 
 - `yarn start`: Runs the app in the development mode
 - `yarn test`: Launches the test runner in the interactive watch mode
 - `yarn build`: Builds the app for production to the `build` folder
+
 
 <h2 style="font-weight:300">Commands NextJS:</h2>
 
