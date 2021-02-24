@@ -21,3 +21,4 @@
 - Add green color (`#4cd62b`) when time is zero <small>(classe 2 - 23/02/21)</small>;
 - Create folder to storage **interfaces** (`src/interfaces`), like `IChallengesContextData` and `IChallenge` <small>(classe 3 - 24/02/21)</small>;
   - **Note:** I use `I<Name>` to represent **interface**.
+- Use **mixins** in **SASS** to reuse code <small>(classe 3 - 24/02/21)</small>;
