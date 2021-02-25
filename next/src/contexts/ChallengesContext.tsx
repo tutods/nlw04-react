@@ -45,7 +45,7 @@ export const ChallengesProvider = ({ children }: ChallengesProviderProps) => {
 
 		if (Notification.permission === 'granted') {
 			new Notification('Novo Desafio 🎉', {
-				body: `Valendo ${challenge.amount} xp!`
+				body: `Novo desafio com ${challenge.amount} xp!`
 			});
 		}
 	};

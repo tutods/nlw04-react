@@ -19,7 +19,6 @@ export function Countdown() {
 
 	const [clockClass, setClockClass] = useState('');
 
-
 	return (
 		<div>
 			<div className={styles['countdown-container']}>
