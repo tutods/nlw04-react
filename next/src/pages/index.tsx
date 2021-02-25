@@ -6,6 +6,7 @@ import { Profile } from '../components/Profile/Profile';
 import styles from './../styles/Home.module.sass';
 
 import Head from 'next/head';
+import { CountdownProvider } from '../contexts/CountdownContext';
 
 export default function Home() {
 	return (
@@ -22,7 +23,9 @@ export default function Home() {
 
 					<CompletedChallenges />
 
-					<Countdown />
+					<CountdownProvider>
+						<Countdown />
+					</CountdownProvider>
 				</div>
 
 				<div>
