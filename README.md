@@ -32,6 +32,7 @@ To see layout created by **Rocketseat** team, click on badge below:
 
 <div align="right" style="margin-top: 50px">
 	<h6 style="text-transform: uppercase; color: #434343">Have interest in:</h6>
-	<a href="https://github.com/TutoDS/nlw04-nodej" target="_blank"><img src="https://img.shields.io/badge/node.js%20NLW4%20Rocketseat%20-%2320232a.svg?&style=for-the-badge&logo=node.js&logoColor=%2343853D" 
-alt="React"/></a>
+	<a href="https://github.com/TutoDS/nlw04-nodej" target="_blank">
+      <img src="https://img.shields.io/badge/node.js%20NLW4%20Rocketseat%20-%2320232a.svg?&style=for-the-badge&logo=node.js&logoColor=%2343853D" alt="NodeJS"/>
+    </a>
 </div>
