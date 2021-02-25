@@ -29,3 +29,9 @@ To see layout created by **Rocketseat** team, click on badge below:
     - **Note:** I use `I<Name>` to represent **interface**.
 - Use **mixins** in **SASS** to reuse code <small>(classe 3 - 24/02/21)</small>;
 - Remove **SASS** partials and combine in one file <small>(classe 4 - 25/02/21)</small>
+
+<div align="right" style="margin-top: 50px">
+	<h6 style="text-transform: uppercase; color: #434343">Have interest in:</h6>
+	<a href="https://github.com/TutoDS/nlw04-nodej" target="_blank"><img src="https://img.shields.io/badge/node.js%20NLW4%20Rocketseat%20-%2320232a.svg?&style=for-the-badge&logo=node.js&logoColor=%2343853D" 
+alt="React"/></a>
+</div>
