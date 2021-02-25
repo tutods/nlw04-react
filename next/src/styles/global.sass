@@ -1,5 +1,12 @@
-@import "theme/theme"
-@import "theme/media-queries"
+@import "theme"
+
+@media (max-width: 1080px)
+    html
+        font-size: 93.75% // 16x0.9375 => 15px } 16 is initial value
+
+@media (max-width: 728px)
+    html
+        font-size: 87.5% // 16x0.875 => 14px } 16 is initial value
 
 *
     margin: 0

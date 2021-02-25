@@ -26,6 +26,25 @@ export const ChallengesProvider = ({ children }: ChallengesProviderProps) => {
 		setCurrentChallenge(null);
 	};
 
+	const completeChallenge = () => {
+		if (!currentChallenge) {
+			return;
+		}
+
+		const { amount } = currentChallenge;
+
+		let finalExperience = currentExperience + amount;
+
+		if (finalExperience >= experienceToNextLevel) {
+			finalExperience = finalExperience - experienceToNextLevel;
+			levelUp();
+		}
+
+		setCurrentExperience(finalExperience);
+		setCurrentChallenge(null);
+		setChallengesCompleted(challengesCompleted + 1);
+	};
+
 	const experienceToNextLevel = Math.pow((level + 1) * 4, 2); // Experience factor
 
 	const levelUp = () => {
@@ -43,6 +62,7 @@ export const ChallengesProvider = ({ children }: ChallengesProviderProps) => {
 				levelUp,
 				startNewChallenge,
 				resetChallenge,
+				completeChallenge
 			}}
 		>
 			{children}

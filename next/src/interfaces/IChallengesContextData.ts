@@ -9,4 +9,5 @@ export interface IChallengesContextData {
 	levelUp: () => void;
 	startNewChallenge: () => void;
 	resetChallenge: () => void;
+	completeChallenge: () => void;
 }
