@@ -17,21 +17,21 @@ export default function Home() {
 
 			<ExperienceBar />
 
-			<section>
-				<div>
-					<Profile />
+			<CountdownProvider>
+				<section>
+					<div>
+						<Profile />
 
-					<CompletedChallenges />
+						<CompletedChallenges />
 
-					<CountdownProvider>
 						<Countdown />
-					</CountdownProvider>
-				</div>
+					</div>
 
-				<div>
-					<ChallengeBox />
-				</div>
-			</section>
+					<div>
+						<ChallengeBox />
+					</div>
+				</section>
+			</CountdownProvider>
 		</div>
 	);
 }

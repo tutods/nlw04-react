@@ -1,4 +1,4 @@
-import { createContext, ReactNode, useState } from 'react';
+import { createContext, ReactNode, useEffect, useState } from 'react';
 import challenges from '../../challenges.json';
 import { IChallengesContextData } from '../interfaces/IChallengesContextData';
 
@@ -15,11 +15,39 @@ export const ChallengesProvider = ({ children }: ChallengesProviderProps) => {
 
 	const [currentChallenge, setCurrentChallenge] = useState(null);
 
+	/**
+	 * Request notifications permissions to browser
+	 */
+	useEffect(() => {
+		Notification.requestPermission();
+	}, []); // Empty array to run only one time
+
+
+	function soundNotification() {
+		const sound = new Audio('/notification.mp3');
+		sound.play()
+			.then(() => {
+			})
+			.catch(error => console.error);
+	}
+
+
 	const startNewChallenge = () => {
 		const randomChallengeIndex = Math.floor(Math.random() * challenges.length);
 		const challenge = challenges[randomChallengeIndex];
 
 		setCurrentChallenge(challenge);
+
+		// const notificationSound = new Audio('/notification.mp3');
+		// notificationSound.play();
+
+		soundNotification();
+
+		if (Notification.permission === 'granted') {
+			new Notification('Novo Desafio 🎉', {
+				body: `Valendo ${challenge.amount} xp!`
+			});
+		}
 	};
 
 	const resetChallenge = () => {

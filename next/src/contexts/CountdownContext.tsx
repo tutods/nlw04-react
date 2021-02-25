@@ -28,6 +28,7 @@ export const CountdownProvider = ({ children }: CountdownProviderProps) => {
 		clearTimeout(countdownTimeout);
 
 		setIsActive(false);
+		setHasFinished(false);
 
 		setTime(0.1 * 60); // reset time to initial value (25 min.)
 	};

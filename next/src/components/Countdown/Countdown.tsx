@@ -19,18 +19,10 @@ export function Countdown() {
 
 	const [clockClass, setClockClass] = useState('');
 
-	// useEffect(() => {
-	// 	if (hasFinished) {
-	// 		// Set clock color green when time is zero
-	// 		setClockClass('green-clock');
-	// 	} else {
-	// 		setClockClass('');
-	// 	}
-	// }, [hasFinished]);
 
 	return (
 		<div>
-			<div className={`${styles['countdown-container']} ${styles[clockClass]}`}>
+			<div className={styles['countdown-container']}>
 				<div>
 					<span>{minuteLeft}</span>
 					<span>{minuteRight}</span>
