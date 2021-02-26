@@ -14,6 +14,9 @@
 To see layout created by **Rocketseat** team, click on badge below:
 
 <a href="https://www.figma.com/file/UnPgRXKJulEvLAq3qkfRQX/Move.it-1.0" target="_blank"><img alt="Figma" src="https://img.shields.io/badge/figma%20-%23F24E1E.svg?&style=for-the-badge&logo=figma&logoColor=white"/></a>
+<a href="https://www.figma.com/file/z4f450KFvYt3jmtF8AxjQq/Move.it-2.0?node-id=160%3A2761" target="_blank">
+<img alt="Figma" src="https://img.shields.io/badge/figma%20-%20Suggestion%20to%20Future%20Version%20-%23007ACC.svg? &style=for-the-badge&logo=figma&logoColor=white"/>
+</a>
 
 <h2 style="font-weight:300">Commands React:</h2>
 
