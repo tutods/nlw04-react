@@ -1,6 +1,7 @@
 import { createContext, ReactNode, useEffect, useState } from 'react';
-import challenges from '../../challenges.json';
 import { IChallengesContextData } from '../interfaces/IChallengesContextData';
+import challenges from '../../challenges.json';
+import Cookies from 'js-cookie';
 
 interface ChallengesProviderProps {
 	children: ReactNode;
@@ -22,15 +23,25 @@ export const ChallengesProvider = ({ children }: ChallengesProviderProps) => {
 		Notification.requestPermission();
 	}, []); // Empty array to run only one time
 
+	/**
+	 * To set cookies when have changes in level or current experience or challengesCompleted
+	 */
+	useEffect(() => {
+		Cookies.set('level', String(level));
+		Cookies.set('currentExperience', String(currentExperience));
+		Cookies.set('challengesCompleted', String(challengesCompleted));
+	}, [level, currentExperience, challengesCompleted]);
 
-	function soundNotification() {
+	/**
+	 * Function to play sound when launch new notification
+	 */
+	function playNotificationSound() {
 		const sound = new Audio('/notification.mp3');
 		sound.play()
 			.then(() => {
 			})
-			.catch(error => console.error);
+			.catch(error => console.log(error));
 	}
-
 
 	const startNewChallenge = () => {
 		const randomChallengeIndex = Math.floor(Math.random() * challenges.length);
@@ -38,10 +49,8 @@ export const ChallengesProvider = ({ children }: ChallengesProviderProps) => {
 
 		setCurrentChallenge(challenge);
 
-		// const notificationSound = new Audio('/notification.mp3');
-		// notificationSound.play();
-
-		soundNotification();
+		// Use function to play sound
+		playNotificationSound();
 
 		if (Notification.permission === 'granted') {
 			new Notification('Novo Desafio 🎉', {
