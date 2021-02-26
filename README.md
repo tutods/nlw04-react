@@ -3,6 +3,12 @@
   <a href="#"><img src="https://img.shields.io/badge/react%20-%2320232a.svg?&style=for-the-badge&logo=react&logoColor=%2361DAFB" alt="React"/></a> <a href="#"><img src="https://img.shields.io/badge/typescript%20-%23007ACC.svg?&style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript" /></a> <a href="#"><img src="https://img.shields.io/badge/Visual_Studio_Code-0078D4?style=for-the-badge&logo=visual%20studio%20code&logoColor=white" alt="VS Code" /></a>
 </div>
 
+<h2 style="font-weight:300">Deploy:</h2>
+
+<a href="https://moveit-tutods.vercel.app/">
+  <img alt="Vercel" src="https://img.shields.io/badge/vercel%20-%23000000.svg?&style=for-the-badge&logo=vercel&logoColor=white" alt='Deploy'/>
+</a>
+
 <h2 style="font-weight:300">Layout:</h2>
 
 To see layout created by **Rocketseat** team, click on badge below:
