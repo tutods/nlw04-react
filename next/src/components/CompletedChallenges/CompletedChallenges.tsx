@@ -2,7 +2,7 @@ import { useContext } from 'react';
 import { ChallengesContext } from '../../contexts/ChallengesContext';
 import styles from './CompletedChallenges.module.sass';
 
-export function CompletedChallenges() {
+const CompletedChallenges = () => {
 	const { challengesCompleted } = useContext(ChallengesContext);
 
 	return (
@@ -11,4 +11,6 @@ export function CompletedChallenges() {
 			<span>{challengesCompleted}</span>
 		</div>
 	);
-}
+};
+
+export { CompletedChallenges };

@@ -39,6 +39,7 @@ To see layout created by **Rocketseat** team, click on badge below:
 - Use different color in modal *overlay* <small>(classe 5 - 26/02/21)</small>;
 - Use close icon (in `LevelUpModal` button) as `::before` content <small>(classe 5 - 26/02/21)</small>;
 - Pass `closeLevelUpModal` function as prop of **`LevelUpModal`** componente <small>(classe 5 - 26/02/21)</small>;
+- Change all components to arrow function <small>(classe 5 - 26/02/21)</small>;
 
 <div align="right" style="margin-top: 50px">
 	<h6 style="text-transform: uppercase; color: #434343">Have interest in:</h6>

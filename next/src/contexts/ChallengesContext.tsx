@@ -5,7 +5,6 @@ import Cookies from 'js-cookie';
 import { IChallengesProviderProps } from '../interfaces/IChallengesProviderProps';
 import { LevelUpModal } from '../components/LevelUpModal/LevelUpModal';
 
-
 export const ChallengesContext = createContext({} as IChallengesContextData);
 
 export const ChallengesProvider = (
