@@ -1,20 +1,29 @@
-import { createContext, ReactNode, useEffect, useState } from 'react';
+import { createContext, useEffect, useState } from 'react';
 import { IChallengesContextData } from '../interfaces/IChallengesContextData';
 import challenges from '../../challenges.json';
 import Cookies from 'js-cookie';
+import { IChallengesProviderProps } from '../interfaces/IChallengesProviderProps';
+import { LevelUpModal } from '../components/LevelUpModal/LevelUpModal';
 
-interface ChallengesProviderProps {
-	children: ReactNode;
-}
 
 export const ChallengesContext = createContext({} as IChallengesContextData);
 
-export const ChallengesProvider = ({ children }: ChallengesProviderProps) => {
-	const [level, setLevel] = useState(1);
-	const [currentExperience, setCurrentExperience] = useState(0);
-	const [challengesCompleted, setChallengesCompleted] = useState(0);
+export const ChallengesProvider = (
+	{
+		children,
+		...props // the remaining props which are not a children
+	}: IChallengesProviderProps) => {
+
+	const [level, setLevel] = useState(props.level ?? 1);
+	const [currentExperience, setCurrentExperience] = useState(props.currentExperience ?? 0);
+	const [challengesCompleted, setChallengesCompleted] = useState(props.challengesCompleted ?? 0);
 
 	const [currentChallenge, setCurrentChallenge] = useState(null);
+
+	/**
+	 * To set state of modal (open or closed)
+	 */
+	const [isLevelUpModelOpen, setIsLevelUpModelOpen] = useState(false);
 
 	/**
 	 * Request notifications permissions to browser
@@ -35,13 +44,17 @@ export const ChallengesProvider = ({ children }: ChallengesProviderProps) => {
 	/**
 	 * Function to play sound when launch new notification
 	 */
-	function playNotificationSound() {
+	const playNotificationSound = () => {
 		const sound = new Audio('/notification.mp3');
 		sound.play()
 			.then(() => {
 			})
 			.catch(error => console.log(error));
-	}
+	};
+
+	const closeLevelUpModal = () => {
+		setIsLevelUpModelOpen(false);
+	};
 
 	const startNewChallenge = () => {
 		const randomChallengeIndex = Math.floor(Math.random() * challenges.length);
@@ -86,6 +99,7 @@ export const ChallengesProvider = ({ children }: ChallengesProviderProps) => {
 
 	const levelUp = () => {
 		setLevel(level + 1);
+		setIsLevelUpModelOpen(true);
 	};
 
 	return (
@@ -103,6 +117,8 @@ export const ChallengesProvider = ({ children }: ChallengesProviderProps) => {
 			}}
 		>
 			{children}
+
+			{isLevelUpModelOpen && <LevelUpModal onClick={closeLevelUpModal} />}
 		</ChallengesContext.Provider>
 	);
 };

@@ -3,41 +3,58 @@ import { Countdown } from '../components/Countdown/Countdown';
 import { ExperienceBar } from '../components/ExperienceBar/ExperienceBar';
 import { ChallengeBox } from '../components/ChallengeBox/ChallengeBox';
 import { Profile } from '../components/Profile/Profile';
+import { CountdownProvider } from '../contexts/CountdownContext';
+import { ChallengesProvider } from '../contexts/ChallengesContext';
+import { GetServerSideProps } from 'next';
+import { IHomeProps } from '../interfaces/IHomeProps';
+import Head from 'next/head';
+
 import styles from './../styles/Home.module.sass';
 
-import Head from 'next/head';
-import { CountdownProvider } from '../contexts/CountdownContext';
-
-export default function Home() {
+export default function Home(props: IHomeProps) {
 	return (
-		<div className={styles['container']}>
-			<Head>
-				<title>Home | move.it</title>
-			</Head>
+		<ChallengesProvider
+			level={props.level}
+			currentExperience={props.currentExperience}
+			challengesCompleted={props.challengesCompleted}
+		>
+			<div className={styles['container']}>
+				<Head>
+					<title>Home | move.it</title>
+				</Head>
 
-			<ExperienceBar />
+				<ExperienceBar />
 
-			<CountdownProvider>
-				<section>
-					<div>
-						<Profile />
+				<CountdownProvider>
+					<section>
+						<div>
+							<Profile />
 
-						<CompletedChallenges />
+							<CompletedChallenges />
 
-						<Countdown />
-					</div>
+							<Countdown />
+						</div>
 
-					<div>
-						<ChallengeBox />
-					</div>
-				</section>
-			</CountdownProvider>
-		</div>
+						<div>
+							<ChallengeBox />
+						</div>
+					</section>
+				</CountdownProvider>
+			</div>
+		</ChallengesProvider>
 	);
 }
 
-export const getServerSideProps = async () => {
+export const getServerSideProps: GetServerSideProps = async (ctx) => {
+
+	// Get Cookies
+	const { level, currentExperience, challengesCompleted } = ctx.req.cookies;
+
 	return {
-		props: {}
+		props: {
+			level: Number(level),
+			currentExperience: Number(currentExperience),
+			challengesCompleted: Number(challengesCompleted)
+		}
 	};
 };
