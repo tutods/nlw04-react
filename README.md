@@ -20,13 +20,7 @@ To see layout created by **Rocketseat** team, click on badge below:
 <img alt="Figma" src="https://img.shields.io/badge/figma%20-%20Suggestion%20to%20Future%20Version%20-%23007ACC.svg? &style=for-the-badge&logo=figma&logoColor=white"/>
 </a>
 
-<h2 style="font-weight:300">Commands React:</h2>
-
--   `yarn start`: Runs the app in the development mode
--   `yarn test`: Launches the test runner in the interactive watch mode
--   `yarn build`: Builds the app for production to the `build` folder
-
-<h2 style="font-weight:300">Commands NextJS:</h2>
+<h2 style="font-weight:300">Commands:</h2>
 
 -   `yarn dev`: Runs the app in the development mode
 
