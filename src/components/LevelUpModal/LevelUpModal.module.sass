@@ -1,55 +1,55 @@
 @import '../../styles/theme'
 
 .overlay
-    background-color: rgba(0, 0, 0, 0.75)
-    position: fixed
-    top: 0
-    bottom: 0
-    left: 0
-    right: 0
+  background-color: rgba(0, 0, 0, 0.75)
+  position: fixed
+  top: 0
+  bottom: 0
+  left: 0
+  right: 0
 
-    +flex-settings()
-    +flex-alignment()
+  +flex-settings()
+  +flex-alignment()
 
 
 .modal
-    background-color: $white
-    width: 100%
-    max-width: 50vh
-    padding: 5rem 3rem
-    border-radius: 5px
-    box-shadow: 0 0 60px rgba(0, 0, 0, 0.05)
-    text-align: center
+  background-color: $white
+  width: 100%
+  max-width: 50vh
+  padding: 5rem 3rem
+  border-radius: 5px
+  box-shadow: 0 0 60px rgba(0, 0, 0, 0.05)
+  text-align: center
 
-    position: relative
+  position: relative
 
-    header
-        font-size: 8.75rem
-        font-weight: 600
-        color: $blue
-        background: url("/icons/levelup.svg") no-repeat center
-        background-size: contain
+  header
+    font-size: 8.75rem
+    font-weight: 600
+    color: $blue
+    background: url("/icons/levelup.svg") no-repeat center
+    background-size: contain
 
-    strong
-        font-size: 2.25rem
-        color: $appTitleColor
+  strong
+    font-size: 2.25rem
+    color: $darkTextColor
 
-    p
-        font-size: 1.25rem
-        color: $appTextColor
-        margin-top: 0.25rem
+  p
+    font-size: 1.25rem
+    color: $darkTextColor
+    margin-top: 0.25rem
 
-    button
-        position: absolute
-        right: 0.5rem
-        top: 0.5rem
-        font-size: 0
+  button
+    position: absolute
+    right: 0.5rem
+    top: 0.5rem
+    font-size: 0
 
-        background: transparent
-        border: 0
+    background: transparent
+    border: 0
 
-        &::before
-            content: url("/icons/close.svg")
-            background-size: cover
-            width: 20px
-            height: 20px
+    &::before
+      content: url("/icons/close.svg")
+      background-size: cover
+      width: 20px
+      height: 20px

@@ -1,4 +1,6 @@
 <h1 align="center" style="font-weight: 300">React <strong>NLW-04</strong></h1>
+<p align='center'><strong>Version 2:</strong> auto dark and light mode, getting your color mode from operating system</p>
+
 <div align="center">
   <a href="#"><img src="https://img.shields.io/badge/react%20-%2320232a.svg?&style=for-the-badge&logo=react&logoColor=%2361DAFB" alt="React"/></a> <a href="#"><img src="https://img.shields.io/badge/typescript%20-%23007ACC.svg?&style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript" /></a> <a href="#"><img src="https://img.shields.io/badge/Visual_Studio_Code-0078D4?style=for-the-badge&logo=visual%20studio%20code&logoColor=white" alt="VS Code" /></a>
 </div>
