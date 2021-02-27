@@ -2,7 +2,7 @@ import { useContext } from 'react';
 import { ChallengesContext } from '../../contexts/ChallengesContext';
 import styles from './CompletedChallenges.module.sass';
 
-const CompletedChallenges = ({ children }) => {
+const CompletedChallenges = () => {
 	const { challengesCompleted } = useContext(ChallengesContext);
 
 	return (
