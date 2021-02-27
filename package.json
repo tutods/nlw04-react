@@ -29,7 +29,8 @@
 		"*.{js,ts,json,scss,css,md,html,tsx,jsx}": [
 			"prettier --write .",
 			"git add ."
-		]
+		],
+		"*.{js,css,md}": "prettier --write"
 	},
 	"husky": {
 		"hooks": {
