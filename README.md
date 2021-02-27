@@ -59,10 +59,17 @@ To see layout created by **Rocketseat** team, click on badge below:
     ```
 
 <div align="right" style="margin-top: 50px">
-	<h6 style="text-transform: uppercase; color: #434343">Have interest in:</h6>
+	<h6 style="text-transform: uppercase;">Have interest in:</h6>
 	<a href="https://github.com/TutoDS/nlw04-node">
       <img src="https://img.shields.io/badge/node.js%20NLW4%20-%2320232a.svg?&style=for-the-badge&logo=node.js&logoColor=%2343853D" alt="NodeJS"/>
     </a>
+</div>
+
+<div align="right" style="margin-top: 20px">
+	<h6 style="text-transform: uppercase;">Wiki with Documentation:</h6>
+	<a href="https://github.com/TutoDS/nlw04-react/wiki">
+	<img alt="GitHub" src="https://img.shields.io/badge/github%20Wiki%20Documentation%20-%23121011.svg?&style=for-the-badge&logo=github&logoColor=white"/>
+	</a>
 </div>
 
 <div align="right" style="margin-top: 50px">
