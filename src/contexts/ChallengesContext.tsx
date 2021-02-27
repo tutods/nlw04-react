@@ -103,7 +103,11 @@ export const ChallengesProvider = ({
 	/**
 	 * When user press ESC key close Level Up Modal
 	 */
-	useKey('Escape', () => setIsLevelUpModelOpen(false));
+	useEffect(() => {
+		if (isLevelUpModelOpen) {
+			useKey('Escape', () => setIsLevelUpModelOpen(false));
+		}
+	}, [isLevelUpModelOpen]);
 
 	return (
 		<ChallengesContext.Provider
