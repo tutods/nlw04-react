@@ -41,6 +41,7 @@ To see layout created by **Rocketseat** team, click on badge below:
 <h2 style="font-weight: 300">🗒 Changes:</h2>
 
 -   All changes of [version 1](https://github.com/TutoDS/nlw04-react/tree/version-1);
+-   Add package to close **Level Up Modal** when press ESC key;
 -   Auto dark or light theme (getting the color mode from your operating system);
 
     -   Example how to set dark colors and light colors:

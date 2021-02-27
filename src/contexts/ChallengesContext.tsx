@@ -4,6 +4,7 @@ import challenges from '../../challenges.json';
 import Cookies from 'js-cookie';
 import { IChallengesProviderProps } from '../interfaces/IChallengesProviderProps';
 import { LevelUpModal } from '../components/LevelUpModal/LevelUpModal';
+import { useKey, useKeyPress } from 'react-use';
 
 export const ChallengesContext = createContext({} as IChallengesContextData);
 
@@ -98,6 +99,11 @@ export const ChallengesProvider = ({
 		setLevel(level + 1);
 		setIsLevelUpModelOpen(true);
 	};
+
+	/**
+	 * When user press ESC key close Level Up Modal
+	 */
+	useKey('Escape', () => setIsLevelUpModelOpen(false));
 
 	return (
 		<ChallengesContext.Provider
