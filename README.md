@@ -20,29 +20,29 @@ To see layout created by **Rocketseat** team, click on badge below:
 
 <h2 style="font-weight:300">Commands React:</h2>
 
-- `yarn start`: Runs the app in the development mode
-- `yarn test`: Launches the test runner in the interactive watch mode
-- `yarn build`: Builds the app for production to the `build` folder
+-   `yarn start`: Runs the app in the development mode
+-   `yarn test`: Launches the test runner in the interactive watch mode
+-   `yarn build`: Builds the app for production to the `build` folder
 
 <h2 style="font-weight:300">Commands NextJS:</h2>
 
-- `yarn dev`: Runs the app in the development mode
+-   `yarn dev`: Runs the app in the development mode
 
 <h2 style="font-weight: 300">Changes:</h2>
 
-- Use **SASS** instead **CSS** <small>(classe 1 - 22/02/21)</small>;
-- Add **Husky *Hook*** to format code in pre-commit <small>(classe 1 - 22/02/21)</small>;
-- Add green color (`#4cd62b`) when time is zero <small>(classe 2 - 23/02/21)</small>;
-- Create folder to storage **interfaces** (`src/interfaces`), like `IChallengesContextData` and `IChallenge` <small>(
-  classe 3 - 24/02/21)</small>;
-    - **Note:** I use `I<Name>` to represent **interface**.
-- Use **mixins** in **SASS** to reuse code <small>(classe 3 - 24/02/21)</small>;
-- Remove **SASS** partials and combine in one file <small>(classe 4 - 25/02/21)</small>;
-- Change components to arrow function <small>(classe 5 - 26/02/21)</small>;
-- Use different color in modal *overlay* <small>(classe 5 - 26/02/21)</small>;
-- Use close icon (in `LevelUpModal` button) as `::before` content <small>(classe 5 - 26/02/21)</small>;
-- Pass `closeLevelUpModal` function as prop of **`LevelUpModal`** componente <small>(classe 5 - 26/02/21)</small>;
-- Change all components to arrow function <small>(classe 5 - 26/02/21)</small>;
+-   Use **SASS** instead **CSS** <small>(classe 1 - 22/02/21)</small>;
+-   Add **Husky _Hook_** to format code in pre-commit <small>(classe 1 - 22/02/21)</small>;
+-   Add green color (`#4cd62b`) when time is zero <small>(classe 2 - 23/02/21)</small>;
+-   Create folder to storage **interfaces** (`src/interfaces`), like `IChallengesContextData` and `IChallenge` <small>(
+    classe 3 - 24/02/21)</small>;
+    -   **Note:** I use `I<Name>` to represent **interface**.
+-   Use **mixins** in **SASS** to reuse code <small>(classe 3 - 24/02/21)</small>;
+-   Remove **SASS** partials and combine in one file <small>(classe 4 - 25/02/21)</small>;
+-   Change components to arrow function <small>(classe 5 - 26/02/21)</small>;
+-   Use different color in modal _overlay_ <small>(classe 5 - 26/02/21)</small>;
+-   Use close icon (in `LevelUpModal` button) as `::before` content <small>(classe 5 - 26/02/21)</small>;
+-   Pass `closeLevelUpModal` function as prop of **`LevelUpModal`** componente <small>(classe 5 - 26/02/21)</small>;
+-   Change all components to arrow function <small>(classe 5 - 26/02/21)</small>;
 
 <div align="right" style="margin-top: 50px">
 	<h6 style="text-transform: uppercase; color: #434343">Have interest in:</h6>
