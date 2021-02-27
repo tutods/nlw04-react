@@ -1,93 +1,93 @@
 @import "../../styles/theme"
 
 .challenge-container
-    height: 100%
+  height: 100%
 
-    background-color: $white
-    border-radius: 5px
-    box-shadow: 0 0 60px rgba(0, 0, 0, 0.05)
-    padding: 1.5rem 2rem
+  background-color: $boxBgColor
+  border-radius: 5px
+  box-shadow: 0 0 60px rgba(0, 0, 0, 0.05)
+  padding: 1.5rem 2rem
+
+  +flex-settings(column)
+  +flex-alignment()
+
+  text-align: center
+
+.challenge-not-active
+  +flex-settings(column)
+  align-items: center
+
+  strong
+    font-size: 1.5rem
+    font-weight: 500
+    line-height: 1.4
+
+  p
+    display: flex
+    flex-direction: column
+    align-items: center
+    line-height: 1.4
+    max-width: 70%
+    margin-top: 3rem
+
+    > img
+      margin-bottom: 1rem
+
+.challenge-active
+  height: 100%
+  width: 100%
+
+  +flex-settings(column)
+
+  header
+    color: $blue
+    font-weight: 600
+    font-size: 1.25rem
+    //20px in desktop
+    padding: 0 2rem 1.5rem
+    border-bottom: 1px solid $grayLineColor
+
+  main
+    flex: 1
 
     +flex-settings(column)
     +flex-alignment()
 
-    text-align: center
-
-.challenge-not-active
-    +flex-settings(column)
-    align-items: center
-
     strong
-        font-size: 1.5rem
-        font-weight: 500
-        line-height: 1.4
+      font-weight: 600
+      font-size: 2rem
+      color: $appTitleColor
+      margin: 1.5rem 0 1rem
 
     p
-        display: flex
-        flex-direction: column
-        align-items: center
-        line-height: 1.4
-        max-width: 70%
-        margin-top: 3rem
+      line-height: 1.5
 
-        > img
-            margin-bottom: 1rem
+  footer
+    display: grid
+    grid-template-columns: repeat(2, 1fr)
+    gap: 1rem
 
-.challenge-active
-    height: 100%
-    width: 100%
+    button
+      height: 3rem
 
-    +flex-settings(column)
+      +flex-settings()
+      +flex-alignment()
 
-    header
-        color: $blue
-        font-weight: 600
-        font-size: 1.25rem
-        //20px in desktop
-        padding: 0 2rem 1.5rem
-        border-bottom: 1px solid $grayLineColor
+      border: 0
+      border-radius: 5px
 
-    main
-        flex: 1
+      color: $white
 
-        +flex-settings(column)
-        +flex-alignment()
+      font-size: 1rem
+      font-weight: 600
 
-        strong
-            font-weight: 600
-            font-size: 2rem
-            color: $appTitleColor
-            margin: 1.5rem 0 1rem
+      transition: filter 0.2s
 
-        p
-            line-height: 1.5
+      &:hover
+        filter: brightness(0.9)
 
-    footer
-        display: grid
-        grid-template-columns: repeat(2, 1fr)
-        gap: 1rem
+      &.failed-btn
+        background-color: $red
 
-        button
-            height: 3rem
-
-            +flex-settings()
-            +flex-alignment()
-
-            border: 0
-            border-radius: 5px
-
-            color: $white
-
-            font-size: 1rem
-            font-weight: 600
-
-            transition: filter 0.2s
-
-            &:hover
-                filter: brightness(0.9)
-
-            &.failed-btn
-                background-color: $red
-
-            &.succeeded-btn
-                background-color: $green
+      &.succeeded-btn
+        background-color: $green

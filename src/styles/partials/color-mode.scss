@@ -1,0 +1,18 @@
+:root {
+	--app-bg-color: #f2f3f5;
+	--app-title-color: #2e384d;
+	--box-bg-color: #fff;
+	--app-text-color: #666;
+}
+
+@media (prefers-color-scheme: dark) {
+	:root {
+		--app-bg-color: #121212;
+		--app-title-color: #fff;
+		--box-bg-color: #434343;
+		--app-text-color: #f7f7f7;
+	}
+}
+
+$appBackgroundColor: var(--app-bg-color);
+$appTitleColor: var(--app-title-color);
