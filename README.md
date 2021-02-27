@@ -1,5 +1,5 @@
 <div align="center">
-<a href="#"><img alt="Move.it" src="./public/logo-full.svg" width="150px">
+<a href="#"><img alt="Move.it" src="./public/logo-full.svg" width="150px"></a>
 <h1 style="font-weight: 300; margin-top: 5px">React <strong>NLW-04</strong></h1>
 <p><strong>Version 2:</strong> auto dark and light mode, getting your color mode from operating system</p>
 </div>
