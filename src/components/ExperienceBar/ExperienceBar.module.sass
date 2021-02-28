@@ -16,12 +16,16 @@
         position: relative
 
         > div
+            position: absolute
             height: 4px
             border-radius: 4px
             background-color: $green
+            transition: width 0.65s ease
+
 
 .current-xp
     position: absolute
     top: 12px
-    transform: translateX(-50%)
     font-weight: bold
+    transform: translateX(-50%)
+    transition: left 0.65s ease

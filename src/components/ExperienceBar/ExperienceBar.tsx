@@ -1,11 +1,15 @@
-import { useContext } from 'react';
+import { useContext, useEffect, useState } from 'react';
 import { ChallengesContext } from '../../contexts/ChallengesContext';
 import styles from './ExperienceBar.module.sass';
 
 const ExperienceBar = () => {
 	const { currentExperience, experienceToNextLevel } = useContext(ChallengesContext);
+	const [percentToNextLevel, setPercentToNextLevel] = useState(0);
 
-	const percentToNextLevel = Math.round(currentExperience * 100) / experienceToNextLevel;
+	useEffect(() => {
+		setTimeout(() => {}, 100);
+		setPercentToNextLevel(Math.round(currentExperience * 100) / experienceToNextLevel);
+	}, []);
 
 	return (
 		<header className={styles['experience-bar']}>
