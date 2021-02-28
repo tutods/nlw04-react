@@ -7,9 +7,10 @@ const ExperienceBar = () => {
 	const [percentToNextLevel, setPercentToNextLevel] = useState(0);
 
 	useEffect(() => {
-		setTimeout(() => {}, 100);
-		setPercentToNextLevel(Math.round(currentExperience * 100) / experienceToNextLevel);
-	}, []);
+		setTimeout(() => {
+			setPercentToNextLevel(Math.round(currentExperience * 100) / experienceToNextLevel);
+		}, 100);
+	}, [percentToNextLevel, currentExperience]);
 
 	return (
 		<header className={styles['experience-bar']}>
