@@ -36,7 +36,7 @@ To see layout created by **Rocketseat** team, click on badge below:
 
 <h2 style="font-weight:300">🚀 Commands:</h2>
 
--   `yarn dev`: Runs the app in the development mode
+-   `yarn start`: Runs the app in the development mode
 
 <h2 style="font-weight: 300">🗒 Changes:</h2>
 
